@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "wifi列表",
+  "usingComponents": {
+    "mp-dialog": "../weui-miniprogram/dialog/dialog"
+  }
+}

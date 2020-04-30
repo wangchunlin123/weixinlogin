@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="log-list">
+  <view wx:for="{{wifilist}}" class="wifilisit" wx:key="index">
+    <text>{{index + 1}}.</text>
+    <button bindtap="clickwifi" class="log-item" data-index="{{item.SSID}}"> {{item.SSID}}</button>
+  </view>
+  <mp-dialog title="wifilist密码" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>
+      <input class="weui-input" value="{{wifiword}}" type="password" bindblur="bindblur" maxlength="10" placeholder="请输入WiFi密码" />
+    </view>
+</mp-dialog>
+</view>
